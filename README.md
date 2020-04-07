@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mediapeers/ansible-role-aws_nat.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-aws_nat)
+[![Build Status](https://travis-ci.com/mediafellows/ansible-role-aws_nat.svg?branch=master)](https://travis-ci.com/mediafellows/ansible-role-aws_nat)
 
 ## Ansible AWS NAT role
 An ansible role thar configures an Ubuntu based AMI to be a used for a
@@ -80,7 +80,7 @@ Just include the role in your play after you created VPC and ENI. See role examp
     nat_eni: "{{ hostvars['localhost']['nat_eni'] }}"
     subnets: "{{ hostvars['localhost']['vpc_private_subnets'] }}"
   roles:
-    - { role: mediapeers.aws_nat, nat_eni_id: "{{nat_eni.interface.id}}", vpc_private_subnets: "{{subnets}}", aws_region: "{{ my_region }}" }
+    - { role: mediafellows.aws_nat, nat_eni_id: "{{nat_eni.interface.id}}", vpc_private_subnets: "{{subnets}}", aws_region: "{{ my_region }}" }
   tasks:
     # ...
 
@@ -95,6 +95,6 @@ You can find the `ec2_eni` module here: https://github.com/ansible/ansible-modul
 BSD
 
 ## Author Information
-Stefan Horning <horning@mediapeers.com>
+Stefan Horning <stefan.horning@mediafellows.com>
 
 Also includes work from https://github.com/ademaria

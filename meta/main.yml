@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: Stefan Horning <horning@mediapeers.com>
+  author: Stefan Horning <stefan.horning@mediafellows.com>
   description: Role to configure AWS NAT instance
-  company: Mediapeers
+  company: Mediafellows GmbH
   license: BSD
 
   min_ansible_version: 1.8
