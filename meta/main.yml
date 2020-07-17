@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: aws_nat
   author: Stefan Horning <stefan.horning@mediafellows.com>
   description: Role to configure AWS NAT instance
   company: Mediafellows GmbH
